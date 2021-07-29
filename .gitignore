@@ -1,0 +1,24 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+
+#Nextjs
+/.next/
+/out/
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+#yarn
+.yarn/
+
+#vscode
+.vscode/
