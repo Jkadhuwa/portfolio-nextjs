@@ -1,0 +1,56 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffff;
+  z-index: 100;
+  position: fixed;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.logo {
+  z-index: 2;
+  position: relative;
+  color: rgb(3, 3, 3);
+  font-size: x-large;
+  padding: 1rem;
+}
+.navLinks {
+  --text-opacity: 2;
+  padding: 1rem;
+  justify-items: space-between;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 3;
+  position: relative;
+  margin-bottom: 6px;
+}
+.activeClass {
+  --text-opacity: 2;
+  color: rgba(217, 119, 6, var(--text-opacity));
+}
+
+.hoverLink {
+  border-bottom-color: white;
+  &:hover {
+    border-bottom: 0.5px solid rgba(217, 119, 6, var(--text-opacity));
+  }
+}
+
+.mobileMenu {
+  position: relative;
+  padding: 1.5rem;
+  left: 0;
+  z-index: 3;
+}
+.btn {
+  border-radius: 5px;
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  height: 3em;
+  padding: 1rem;
+  margin-right: 1.5em;
+  text-transform: uppercase;
+}

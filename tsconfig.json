@@ -19,8 +19,16 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es2018"
+    "target": "es2018",
+    "strictNullChecks": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@hooks/*": ["hooks/*"],
+      "@styles/*": ["styles/*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_app.js"],
+
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/_app.js"],
   "exclude": ["node_modules"]
 }

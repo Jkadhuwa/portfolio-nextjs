@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.3.1",
+    "axios": "^0.21.1",
     "next": "^11.0.1",
     "postcss": "^8.3.6",
     "react": "^17.0.2",
@@ -31,6 +32,7 @@
     "eslint-config-google": "^0.14.0",
     "eslint-config-next": "^11.0.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsdoc": "^36.0.6",
     "eslint-plugin-react": "^7.24.0",
     "husky": "^7.0.0",
     "postcss-flexbugs-fixes": "^5.0.2",

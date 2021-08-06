@@ -3,7 +3,12 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["plugin:react/recommended", "google", "prettier"],
+  extends: [
+    "plugin:react/recommended",
+    "google",
+    "prettier",
+    "plugin:jsdoc/recommended",
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
@@ -12,8 +17,14 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint"],
-  rules: {},
+  plugins: ["react", "@typescript-eslint", "jsdoc"],
+  rules: {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [
+      1,
+      { extensions: [".js", ".jsx", ".tsx", ".ts"] },
+    ],
+  },
   settings: {
     react: {
       version: "latest",
