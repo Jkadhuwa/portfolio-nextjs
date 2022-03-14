@@ -1,7 +1,9 @@
 import React from "react";
-import Image from "next/image";
-import styles from "@styles/homepage.module.scss";
-
+import Intro from "@components/Intro";
+import Counts from "@components/Counts";
+import AboutMe from "@components/AboutMe";
+import Expertise from "@components/Expertise";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 /**
  * Component for Homepage
  *
@@ -10,17 +12,21 @@ import styles from "@styles/homepage.module.scss";
 
 const Homepage = () => {
   return (
-    <section className="overflow-x-hidden">
-      <article>
-        <Image
-          className={styles.hompageImage}
-          src="/images/bg1.jpg"
-          layout="fill"
-        />
-        <div
-          className={`${styles.homepageText} flex flex-col justify-center items-center h-screen text-gray-300 space-y-2`}
-        >
-          <p className="text-3xl md:text-3xl flex flex-wrap md:text-4x uppercase">
+    <div className="overflow-x-hidden relative ">
+      <section className="bg-slate-100 mx-36 relatve  shadow">
+        <Intro />
+      </section>
+      <section>
+        <Counts />
+      </section>
+      <section>
+        <AboutMe />
+      </section>
+      <section>
+        <Expertise />
+      </section>
+
+      {/* <p className="text-3xl md:text-3xl flex flex-wrap md:text-4x uppercase">
             Musinda Kadhuwa
           </p>
           <hr className="w-80  md:w-96 h-0.5 bg-gray-300 " />
@@ -30,9 +36,9 @@ const Homepage = () => {
           <hr className="w-80  h-0.5 bg-gray-300" />
           <p className="flex justify-center normal-case text-xl">
             Passionate about tech.
-          </p>
-        </div>
-      </article>
+          </p> */
+      /* <a href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a>
+      
       <article className="grid grid-cols-1 h-screen justify-center  md:grid-cols-2 mt-24">
         <div className="flex w-60 h-60 ml-16 -mb- sm:w-screen md:ml-48 lg:ml-24">
           <img
@@ -103,8 +109,8 @@ const Homepage = () => {
             <p>⚡ I dont like swimming and I live next to the ocean. </p>
           </div>
         </div>
-      </article>
-    </section>
+      </article> */}
+    </div>
   );
 };
 

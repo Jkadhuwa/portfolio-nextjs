@@ -1,14 +1,21 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { AppProps } from "next/app";
 import Head from "next/head";
-import "@styles/styles.scss";
+import { library, config } from "@fortawesome/fontawesome-svg-core";
+import "@styles/styles.css";
 import Layout from "@components/layout/Layout";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 /**
  *
  * @returns
  */
 
-const MainApp = ({ Component, pageProps }: AppProps) => {
+config.autoAddCss = false;
+library.add(far,fas, fab);
+
+const MainApp = ({ Component, pageProps }: AppProps): ReactElement => {
   return (
     <Layout>
       <Head>

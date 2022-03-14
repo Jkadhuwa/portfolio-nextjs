@@ -1,9 +1,6 @@
-import { useState } from "react";
+import { useRouter } from "next/router";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import HambugerIcon from "../HambugerIcon";
-import CloseIcon from "../CloseIcon";
-import NavLinks from "./NavLinks";
-import styles from "@styles/navbar.module.scss";
 
 /**
  * Creates a navigation bar for the application
@@ -13,70 +10,118 @@ import styles from "@styles/navbar.module.scss";
 
 const Navbar = () => {
   const initial: string = "<MK/>";
-
-  const [isMenuOpen, setState] = useState(false);
-  const [blogActive, setBlog] = useState(false);
-  const showMenu = () => {
-    setState(!isMenuOpen);
-  };
-  const closeMenu = () => {
-    setState(false);
-  };
-
-  const showBlogs = () => {
-    setBlog(true);
-  };
-  const hideBlogs = () => {
-    setBlog(false);
-  };
+  const router = useRouter();
 
   return (
-    <header className={styles.header}>
-      <div className={styles.logo}>
-        <Link href="/">{initial}</Link>
+    <header className="flex justify-around  sticky top-0 text-gray-500 bg-white h-20 items-center z-50 opacity-100 ">
+      <div className=" flex text-gray-800 h-12 w-12 rounded-full border border  items-center">
+        <Link href="/">
+          <a className="cursor-pointer">{initial}</a>
+        </Link>
       </div>
+      <div>
+        <nav className="space-x-8 text-inherit">
+          <Link href="/">
+            <a
+              className={
+                router.pathname == "/"
+                  ? `text-indigo-700 `
+                  : `hover:text-yellow-600`
+              }
+              // onClick={hideBlogs}
+            >
+              About
+            </a>
+          </Link>
+          <Link href="/portfolio">
+            <a
+              className={
+                router.pathname == "/portfolio"
+                  ? `text-indigo-700 `
+                  : `hover:text-yellow-600`
+              }
+              // onClick={closeMenu}
+            >
+              Portfolio
+            </a>
+          </Link>
+          <Link href="/resume">
+            <a
+              className={
+                router.pathname == "/resume"
+                  ? `text-indigo-700 `
+                  : `hover:text-yellow-600`
+              }
+              // onClick={closeMenu}
+            >
+              Resume
+            </a>
+          </Link>
+          <Link href="/blogs">
+            <a
+              className={
+                router.pathname == "/resume"
+                  ? `text-indigo-700 `
+                  : `hover:text-yellow-600`
+              }
+              // onClick={closeMenu}
+            >
+              Blogs
+            </a>
+          </Link>
+          <Link href="/contact">
+            <a
+              className={
+                router.pathname == "/resume"
+                  ? `text-indigo-700 `
+                  : `hover:text-yellow-600`
+              }
+              // onClick={closeMenu}
+            >
+              Contact
+            </a>
+          </Link>
+        </nav>
+      </div>
+      <div className="flex w-36 space-x-4 ">
+        <Link href="/contact">
+          <FontAwesomeIcon
+            icon={["fab", "dribbble"]}
+            size="xs"
+            className="cursor-pointer"
+          />
+        </Link>
 
-      <nav>
-        <div className={`${styles.mobileMenu} sm:hidden flex items-center`}>
-          {isMenuOpen && (
-            <button
-              className="focus:outline-none mobile-menu"
-              onClick={closeMenu}
-            >
-              <CloseIcon />
-            </button>
-          )}
-          {!isMenuOpen && (
-            <button
-              className="focus:outline-none mobile-menu"
-              onClick={showMenu}
-            >
-              <HambugerIcon />
-            </button>
-          )}
-        </div>
-        {!isMenuOpen && (
-          <div className="mx-auto">
-            <NavLinks
-              displayStyle={`hidden sm:flex sm:mr-4 sm:mx-auto text-xl ${styles.navLinks}`}
-              closeMenu={closeMenu}
-              showBlog={showBlogs}
-              hideBlogs={hideBlogs}
-            />
-          </div>
-        )}
-        {isMenuOpen && (
-          <div className="w-60 bg-gray-100 h-60">
-            <NavLinks
-              displayStyle="flex flex-col items-start uppercase space-y-4 transition duration-700 ease-in-out sm:hidden"
-              closeMenu={closeMenu}
-            />
-          </div>
-        )}
-      </nav>
-      <div className={blogActive ? "" : "hidden"}>
-        <button className={styles.btn}>Sign up</button>
-        <button className={styles.btn}>Sign in</button>
+        <Link href="/contact">
+          <FontAwesomeIcon
+            icon={["fab", "linkedin"]}
+            size="xs"
+            className="cursor-pointer"
+          />
+        </Link>
+
+        <Link href="/contact">
+          <FontAwesomeIcon
+            icon={["fab", "github"]}
+            size="xs"
+            className="cursor-pointer"
+          />
+        </Link>
+
+        <Link href="/contact">
+          <FontAwesomeIcon
+            icon={["fab", "bitbucket"]}
+            size="xs"
+            className="cursor-pointer"
+          />
+        </Link>
+        <Link href="/contact">
+          <FontAwesomeIcon
+            icon={["fab", "medium-m"]}
+            size="xs"
+            className="cursor-pointer"
+          />
+        </Link>
       </div>
     </header>
   );

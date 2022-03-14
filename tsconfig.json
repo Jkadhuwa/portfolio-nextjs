@@ -25,7 +25,8 @@
     "paths": {
       "@components/*": ["components/*"],
       "@hooks/*": ["hooks/*"],
-      "@styles/*": ["styles/*"]
+      "@styles/*": ["assets/styles/*"],
+      "@images/*": ["assets/images/*"]
     }
   },
 
