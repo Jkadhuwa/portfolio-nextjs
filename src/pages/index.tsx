@@ -12,21 +12,25 @@ import Expertise from "@components/Expertise";
 
 const Homepage = () => {
   return (
-    <div className="overflow-x-hidden relative ">
-      <section className="bg-slate-100 mx-36 relatve  shadow">
+    <div className="">
+      <section className="px-8 py-12 md:px-12 md:py-16 lg:mx-32 bg-gray-10 shadow md:mx-10 ">
+       
         <Intro />
       </section>
-      <section>
+      <section className="">
         <Counts />
       </section>
-      <section>
+      {/* <section className="">
         <AboutMe />
-      </section>
-      <section>
+      </section> */}
+      {/* <section className="">
         <Expertise />
-      </section>
+      </section> */}
 
-      {/* <p className="text-3xl md:text-3xl flex flex-wrap md:text-4x uppercase">
+      {/* 
+
+      w-fit mx-12 md:mx-36 
+      <p className="text-3xl md:text-3xl flex flex-wrap md:text-4x uppercase">
             Musinda Kadhuwa
           </p>
           <hr className="w-80  md:w-96 h-0.5 bg-gray-300 " />

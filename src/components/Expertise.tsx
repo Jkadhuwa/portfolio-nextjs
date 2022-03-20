@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import ExpertiseCard from "./ExpertiseCard";
 import expertise from "database/expertise";
 
 const Expertise = () => {
+  const [state, setState] = useState(expertise);
   return (
-    <div className="flex my-12 bg-green-50  mx-12 px-16 py-12">
+    <div className="flex my-12 bg-green-50  mx-12 md:px-16 md:py-12">
       <div className="basis-1/2">
         <div>
           <h3 className="uppercase text-gray-700 text-medium font-base ">
@@ -32,7 +33,7 @@ const Expertise = () => {
       </div>
       <div className="basis-1/2">
         <div className="grid grid-rows-2 grid-flow-col gap-4 ">
-          {expertise?.map((expert) => (
+          {state?.map((expert) => (
             <ExpertiseCard
               iconPrefix={expert?.iconPrefix}
               iconName={expert?.iconName}

@@ -13,13 +13,13 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <header className="flex justify-around  sticky top-0 text-gray-500 bg-white h-20 items-center z-50 opacity-100 ">
+    <header className="flex justify-around md:justify-between md:px-32  sticky top-0  text-gray-500 bg-white h-20 items-center z-50 opacity-100 animated ">
       <div className=" flex text-gray-800 h-12 w-12 rounded-full border border  items-center">
         <Link href="/">
           <a className="cursor-pointer">{initial}</a>
         </Link>
       </div>
-      <div>
+      <div className="hidden md:flex">
         <nav className="space-x-8 text-inherit">
           <Link href="/">
             <a
@@ -83,7 +83,7 @@ const Navbar = () => {
           </Link>
         </nav>
       </div>
-      <div className="flex w-36 space-x-4 ">
+      <div className="hidden lg:flex lg:w-36 space-x-4 ">
         <Link href="/contact">
           <FontAwesomeIcon
             icon={["fab", "dribbble"]}

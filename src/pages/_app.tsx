@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, Props } from "react";
 import { AppProps } from "next/app";
 import Head from "next/head";
 import { library, config } from "@fortawesome/fontawesome-svg-core";
@@ -13,7 +13,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
  */
 
 config.autoAddCss = false;
-library.add(far,fas, fab);
+library.add(far, fas, fab);
 
 const MainApp = ({ Component, pageProps }: AppProps): ReactElement => {
   return (

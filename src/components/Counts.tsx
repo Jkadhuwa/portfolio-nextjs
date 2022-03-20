@@ -2,7 +2,7 @@ import React from "react";
 
 const Counts = () => {
   return (
-    <div className="grid mt-28 m-36">
+    <div className="md:block mt-28 m-36">
       <div className=" border-gray-100 border " />
       <div className="grid grid-cols-4 gap-4 place-items-center p-16">
         <div className="flex flex-col text-center">

@@ -26,10 +26,11 @@
       "@components/*": ["components/*"],
       "@hooks/*": ["hooks/*"],
       "@styles/*": ["assets/styles/*"],
-      "@images/*": ["assets/images/*"]
+      "@images/*": ["assets/images/*"],
+      "@mocks/*": ["__mocks__/*"]
     }
   },
 
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/_app.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/_app.js", "jest.config.js", "src/__mocks__/filesMock.js", "src/__mocks__/@fortawesome/fontAwesomeIcon.js", "src/__mocks__/filesMock.js", "src/__mocks__/@fortawesome/fontAwesomeIcon.js"],
   "exclude": ["node_modules"]
 }

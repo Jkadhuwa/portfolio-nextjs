@@ -1,14 +1,18 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
+import Profile from '@images/profile.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <div className="flex flex-col bg-slate-900  mx-32 px-36 py-12">
-      <section className="grid grid-cols-2 gap-6">
+    <div className="flex flex-col bg-slate-900  md:mx-32 md:px-36 py-12">
+      <section className="md:grid md:grid-cols-2 gap-6">
         <div className="">
-          <div className="h-20 w-20 rounded-full bg-gray-300 mb-12"></div>
+          <div className="flex justify-center h-20 w-20 rounded-full bg-gray-300 mb-12">
+            <Image src={Profile} alt="profile_pic" className="rounded-full "/>
+          </div>
           <div className="grid mb-12">
             <span className="text-gray-200 text-xl font-medium">
               Musinda Kadhuwa

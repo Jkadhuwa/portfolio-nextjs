@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex flex-row text-gray-300 p-16"
+      >
+        <div
+          class="flex flex-col basis-1/2 pr-12"
+        >
+          <div
+            class="max-w-sm"
+          >
+            <h2
+              class="font-nunito text-gray-800 font-bold text-4xl text-left mb-6 "
+            >
+              Building Solutions using Tech
+            </h2>
+          </div>
+          <div
+            class="flex"
+          >
+            <div
+              class=" flex justify-center h-10 w-10 bg-indigo-700 rounded-full items-cent "
+            >
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-star fa-xs "
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-star fa-xs "
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-star fa-xs "
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                />
+              </svg>
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-star fa-xs "
+                data-icon="star"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <span
+              class="font-nunito text-indigo-700 text-4xl font-bold mx-4"
+            >
+              Experience
+            </span>
+          </div>
+          <div
+            class="font-nunito mt-6"
+          >
+            <p
+              class="text-gray-500 font-extralight font-raleway"
+            >
+              A 
+              <span
+                class="font-medium"
+              >
+                Fullstack Web Developer
+              </span>
+               with extensive experience in Nodejs and its frameworks. I specialize in ReactJs, Nextjs for frontend and ExpressJs, NestJs and not limited to SpringBoot.
+            </p>
+          </div>
+          <div
+            class="mt-8"
+          >
+            <button
+              class="border rounded font-medium text-sm p-2 text-white bg-indigo-700 font-nunito font-base"
+            >
+              Connect With Me
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex basis-1/2"
+        >
+          <span
+            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+              />
+            </span>
+            <img
+              alt="Banner"
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-position: center;"
+            />
+            <noscript />
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex flex-row text-gray-300 p-16"
+    >
+      <div
+        class="flex flex-col basis-1/2 pr-12"
+      >
+        <div
+          class="max-w-sm"
+        >
+          <h2
+            class="font-nunito text-gray-800 font-bold text-4xl text-left mb-6 "
+          >
+            Building Solutions using Tech
+          </h2>
+        </div>
+        <div
+          class="flex"
+        >
+          <div
+            class=" flex justify-center h-10 w-10 bg-indigo-700 rounded-full items-cent "
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-star fa-xs "
+              data-icon="star"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                fill="currentColor"
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-star fa-xs "
+              data-icon="star"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                fill="currentColor"
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-star fa-xs "
+              data-icon="star"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                fill="currentColor"
+              />
+            </svg>
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-star fa-xs "
+              data-icon="star"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <span
+            class="font-nunito text-indigo-700 text-4xl font-bold mx-4"
+          >
+            Experience
+          </span>
+        </div>
+        <div
+          class="font-nunito mt-6"
+        >
+          <p
+            class="text-gray-500 font-extralight font-raleway"
+          >
+            A 
+            <span
+              class="font-medium"
+            >
+              Fullstack Web Developer
+            </span>
+             with extensive experience in Nodejs and its frameworks. I specialize in ReactJs, Nextjs for frontend and ExpressJs, NestJs and not limited to SpringBoot.
+          </p>
+        </div>
+        <div
+          class="mt-8"
+        >
+          <button
+            class="border rounded font-medium text-sm p-2 text-white bg-indigo-700 font-nunito font-base"
+          >
+            Connect With Me
+          </button>
+        </div>
+      </div>
+      <div
+        class="flex basis-1/2"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt="Banner"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-position: center;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

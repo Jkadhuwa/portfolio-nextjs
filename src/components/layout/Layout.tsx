@@ -7,9 +7,10 @@ interface LayoutProps {
 }
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <Fragment>
+    <Fragment >
       <Navbar />
-      <main>{children}</main>
+      <div className="top-1 sticky shadow w-full border-b"></div>
+      <main className="relative">{children}</main>
       <Footer />
     </Fragment>
   );
