@@ -31,6 +31,17 @@
     }
   },
 
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/_app.js", "jest.config.js", "src/__mocks__/filesMock.js", "src/__mocks__/@fortawesome/fontAwesomeIcon.js", "src/__mocks__/filesMock.js", "src/__mocks__/@fortawesome/fontAwesomeIcon.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/pages/_app.js",
+    "jest.config.ts",
+    "src/__mocks__/filesMock.js",
+    "src/__mocks__/@fortawesome/fontAwesomeIcon.js",
+    "src/__mocks__/filesMock.js",
+    "src/__mocks__/@fortawesome/fontAwesomeIcon.js",
+    "src/__mocks__/jest/imageMock.js"
+  ],
   "exclude": ["node_modules"]
 }

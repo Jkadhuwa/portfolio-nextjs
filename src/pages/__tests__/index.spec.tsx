@@ -2,7 +2,8 @@ import React from "react";
 import "@testing-library/jest-dom";
 import { render, screen, cleanup } from "@testing-library/react";
 import FontAwesomeIcon from "@mocks/@fortawesome/fontAwesomeIcon";
-import Intro from "../Intro";
+
+import Homepage from "../index";
 
 afterEach(cleanup);
 
@@ -15,25 +16,26 @@ jest.mock("../../public/logo.png", () => {
 });
 
 const createWrapper = () => {
-  return render(<Intro />);
+  return render(<Homepage />);
 };
-describe("Test Intro component", () => {
+
+describe("Test Index component", () => {
   describe("Snapshot Tests", () => {
     const wrapper = createWrapper();
 
     expect(wrapper).toMatchSnapshot();
   });
 
-  describe("Intro Unit Tests", () => {
-    it("Should render intro correctly", () => {
+  describe("Homepage Unit Tests", () => {
+    it("Should render index correctly", () => {
       createWrapper();
     });
 
     it("should have correct heading", () => {
       createWrapper();
-      expect(screen.getAllByRole("heading")[0]).toHaveTextContent(
-        "Building Solutions using Tech"
-      );
+      expect(
+        screen.getByText(/MY EXPERTISE/i)
+      ).toBeInTheDocument();
     });
   });
 });

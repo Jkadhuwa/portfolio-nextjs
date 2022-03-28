@@ -2,8 +2,7 @@ import React from "react";
 import "@testing-library/jest-dom";
 import { render, screen, cleanup } from "@testing-library/react";
 import FontAwesomeIcon from "@mocks/@fortawesome/fontAwesomeIcon";
-import Expertise from "@components/Expertise";
-import expertise, { IExpertise } from "../../database/expertise";
+import AboutMe from "@components/AboutMe";
 
 afterEach(cleanup);
 
@@ -15,15 +14,8 @@ jest.mock("../../public/logo.png", () => {
   };
 });
 
-
-// jest.mock("../../database/expertise.ts", () => {
-//   return {
-//     expertise,
-//   };
-// });
-
 const createWrapper = () => {
-  return render(<Expertise />);
+  return render(<AboutMe />);
 };
 describe("Test Intro component", () => {
   describe("Snapshot Tests", () => {
@@ -32,16 +24,20 @@ describe("Test Intro component", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  describe("Intro Unit Tests", () => {
-    it("Should render intro correctly", () => {
+  describe("AboutMe Unit Tests", () => {
+    it("Should render aboutme correctly", () => {
       createWrapper();
     });
 
-    // it("should have correct heading", () => {
-    //   createWrapper();
-    //   expect(screen.getAllByRole("heading")[0]).toHaveTextContent(
-    //     "Building Solutions using Tech"
-    //   );
-    // });
+    it("should have correct heading", () => {
+      createWrapper();
+      expect(screen.getByText(/A Bit More About Me/i)).toBeInTheDocument();
+    });
+
+    it("should have a single button with name More ...", () => {
+      createWrapper();
+       expect(screen.getByRole('button')).toHaveTextContent('More ...');
+       expect(screen.getAllByRole("button").length).toBe(1);
+    });
   });
 });

@@ -25,10 +25,13 @@ const Intro = () => {
         </div>
         <div className="flex font-nunito mt-6">
           <p className="text-gray-500 font-extralight font-raleway">
-            A <span className="font-medium">Software Engineer based in Nairobi, Kenya</span>  with
-            extensive experience in Nodejs and its frameworks. I specialize in
-            ReactJs, Nextjs for frontend and ExpressJs, NestJs and not limited
-            to SpringBoot.
+            A{" "}
+            <span className="font-medium">
+              Software Engineer based in Nairobi, Kenya
+            </span>{" "}
+            with extensive experience in Nodejs and its frameworks. I specialize
+            in ReactJs, Nextjs for frontend and ExpressJs, NestJs and not
+            limited to SpringBoot.
           </p>
         </div>
         <div className="mt-8">
@@ -40,7 +43,6 @@ const Intro = () => {
       <div className="hidden md:flex md:basis-1/2  md:items-center ">
         <Image src={Banner} alt="Banner" objectPosition="center" />
       </div>
-      
     </div>
   );
 };

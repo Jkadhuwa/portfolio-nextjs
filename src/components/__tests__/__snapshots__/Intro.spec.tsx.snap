@@ -6,16 +6,16 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="flex flex-row text-gray-300 p-16"
+        class="flex text-gray-300 "
       >
         <div
-          class="flex flex-col basis-1/2 pr-12"
+          class="md:basis-1/2 px-6 "
         >
           <div
-            class="max-w-sm"
+            class=" "
           >
             <h2
-              class="font-nunito text-gray-800 font-bold text-4xl text-left mb-6 "
+              class="font-nunito text-gray-800 font-bold text-4xl mb-6 "
             >
               Building Solutions using Tech
             </h2>
@@ -24,7 +24,7 @@ Object {
             class="flex"
           >
             <div
-              class=" flex justify-center h-10 w-10 bg-indigo-700 rounded-full items-cent "
+              class=" flex justify-center h-10 w-10 bg-indigo-700 rounded-full "
             >
               <svg
                 aria-hidden="true"
@@ -87,39 +87,41 @@ Object {
                 />
               </svg>
             </div>
-            <span
-              class="font-nunito text-indigo-700 text-4xl font-bold mx-4"
+            <h3
+              class="flex font-nunito text-indigo-700 text-4xl font-bold mx-4"
             >
               Experience
-            </span>
+            </h3>
           </div>
           <div
-            class="font-nunito mt-6"
+            class="flex font-nunito mt-6"
           >
             <p
               class="text-gray-500 font-extralight font-raleway"
             >
-              A 
+              A
+               
               <span
                 class="font-medium"
               >
-                Fullstack Web Developer
+                Software Engineer based in Nairobi, Kenya
               </span>
-               with extensive experience in Nodejs and its frameworks. I specialize in ReactJs, Nextjs for frontend and ExpressJs, NestJs and not limited to SpringBoot.
+               
+              with extensive experience in Nodejs and its frameworks. I specialize in ReactJs, Nextjs for frontend and ExpressJs, NestJs and not limited to SpringBoot.
             </p>
           </div>
           <div
             class="mt-8"
           >
             <button
-              class="border rounded font-medium text-sm p-2 text-white bg-indigo-700 font-nunito font-base"
+              class="border rounded font-extralight p-3 text-white bg-indigo-700 font-nunito h-12 hover:bg-indigo-500"
             >
               Connect With Me
             </button>
           </div>
         </div>
         <div
-          class="flex basis-1/2"
+          class="hidden md:flex md:basis-1/2 md:items-center "
         >
           <span
             style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
@@ -149,16 +151,16 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="flex flex-row text-gray-300 p-16"
+      class="flex text-gray-300 "
     >
       <div
-        class="flex flex-col basis-1/2 pr-12"
+        class="md:basis-1/2 px-6 "
       >
         <div
-          class="max-w-sm"
+          class=" "
         >
           <h2
-            class="font-nunito text-gray-800 font-bold text-4xl text-left mb-6 "
+            class="font-nunito text-gray-800 font-bold text-4xl mb-6 "
           >
             Building Solutions using Tech
           </h2>
@@ -167,7 +169,7 @@ Object {
           class="flex"
         >
           <div
-            class=" flex justify-center h-10 w-10 bg-indigo-700 rounded-full items-cent "
+            class=" flex justify-center h-10 w-10 bg-indigo-700 rounded-full "
           >
             <svg
               aria-hidden="true"
@@ -230,39 +232,41 @@ Object {
               />
             </svg>
           </div>
-          <span
-            class="font-nunito text-indigo-700 text-4xl font-bold mx-4"
+          <h3
+            class="flex font-nunito text-indigo-700 text-4xl font-bold mx-4"
           >
             Experience
-          </span>
+          </h3>
         </div>
         <div
-          class="font-nunito mt-6"
+          class="flex font-nunito mt-6"
         >
           <p
             class="text-gray-500 font-extralight font-raleway"
           >
-            A 
+            A
+             
             <span
               class="font-medium"
             >
-              Fullstack Web Developer
+              Software Engineer based in Nairobi, Kenya
             </span>
-             with extensive experience in Nodejs and its frameworks. I specialize in ReactJs, Nextjs for frontend and ExpressJs, NestJs and not limited to SpringBoot.
+             
+            with extensive experience in Nodejs and its frameworks. I specialize in ReactJs, Nextjs for frontend and ExpressJs, NestJs and not limited to SpringBoot.
           </p>
         </div>
         <div
           class="mt-8"
         >
           <button
-            class="border rounded font-medium text-sm p-2 text-white bg-indigo-700 font-nunito font-base"
+            class="border rounded font-extralight p-3 text-white bg-indigo-700 font-nunito h-12 hover:bg-indigo-500"
           >
             Connect With Me
           </button>
         </div>
       </div>
       <div
-        class="flex basis-1/2"
+        class="hidden md:flex md:basis-1/2 md:items-center "
       >
         <span
           style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"

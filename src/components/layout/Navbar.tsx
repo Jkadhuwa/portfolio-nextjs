@@ -24,7 +24,7 @@ const Navbar = () => {
           <Link href="/">
             <a
               className={
-                router.pathname == "/"
+                router.pathname === "/"
                   ? `text-indigo-700 `
                   : `hover:text-yellow-600`
               }
@@ -36,7 +36,7 @@ const Navbar = () => {
           <Link href="/portfolio">
             <a
               className={
-                router.pathname == "/portfolio"
+                router.pathname === "/portfolio"
                   ? `text-indigo-700 `
                   : `hover:text-yellow-600`
               }
@@ -48,7 +48,7 @@ const Navbar = () => {
           <Link href="/resume">
             <a
               className={
-                router.pathname == "/resume"
+                router.pathname === "/resume"
                   ? `text-indigo-700 `
                   : `hover:text-yellow-600`
               }
@@ -60,7 +60,7 @@ const Navbar = () => {
           <Link href="/blogs">
             <a
               className={
-                router.pathname == "/resume"
+                router.pathname === "/resume"
                   ? `text-indigo-700 `
                   : `hover:text-yellow-600`
               }
@@ -72,7 +72,7 @@ const Navbar = () => {
           <Link href="/contact">
             <a
               className={
-                router.pathname == "/resume"
+                router.pathname === "/resume"
                   ? `text-indigo-700 `
                   : `hover:text-yellow-600`
               }
@@ -83,45 +83,62 @@ const Navbar = () => {
           </Link>
         </nav>
       </div>
-      <div className="hidden lg:flex lg:w-36 space-x-4 ">
-        <Link href="/contact">
-          <FontAwesomeIcon
-            icon={["fab", "dribbble"]}
-            size="xs"
-            className="cursor-pointer"
-          />
-        </Link>
-
-        <Link href="/contact">
-          <FontAwesomeIcon
-            icon={["fab", "linkedin"]}
-            size="xs"
-            className="cursor-pointer"
-          />
-        </Link>
-
-        <Link href="/contact">
-          <FontAwesomeIcon
-            icon={["fab", "github"]}
-            size="xs"
-            className="cursor-pointer"
-          />
-        </Link>
-
-        <Link href="/contact">
-          <FontAwesomeIcon
-            icon={["fab", "bitbucket"]}
-            size="xs"
-            className="cursor-pointer"
-          />
-        </Link>
-        <Link href="/contact">
-          <FontAwesomeIcon
-            icon={["fab", "medium-m"]}
-            size="xs"
-            className="cursor-pointer"
-          />
-        </Link>
+      <div className="hidden lg:flex lg:w-36 space-x-4 lg:items-center ">
+        <span className="lg:w-12">
+          <Link href="/contact">
+            <a>
+              <FontAwesomeIcon
+                icon={["fab", "dribbble"]}
+                size="xs"
+                className="cursor-pointer"
+              />
+            </a>
+          </Link>
+        </span>
+        <span className="lg:w-12">
+          <Link href="/contact">
+            <a>
+              <FontAwesomeIcon
+                icon={["fab", "linkedin"]}
+                size="xs"
+                className="cursor-pointer"
+              />
+            </a>
+          </Link>
+        </span>
+        <span className="w-12">
+          <Link href="/contact">
+            <a>
+              <FontAwesomeIcon
+                icon={["fab", "github"]}
+                size="xs"
+                className="cursor-pointer"
+              />
+            </a>
+          </Link>
+        </span>
+        <span className="w-12">
+          <Link href="/contact">
+            <a>
+              <FontAwesomeIcon
+                icon={["fab", "bitbucket"]}
+                size="xs"
+                className="cursor-pointer"
+              />
+            </a>
+          </Link>
+        </span>
+        <span className="w-12">
+          <Link href="/contact">
+            <a>
+              <FontAwesomeIcon
+                icon={["fab", "medium-m"]}
+                size="xs"
+                className="cursor-pointer"
+              />
+            </a>
+          </Link>
+        </span>
       </div>
     </header>
   );

@@ -1,23 +1,27 @@
 import React from "react";
 import "@testing-library/jest-dom";
-import { render, screen, cleanup } from "@testing-library/react";
-import FontAwesomeIcon from "@mocks/@fortawesome/fontAwesomeIcon";
-import Intro from "../Intro";
+import { render, screen, fireEvent, cleanup } from "@testing-library/react";
+import FontAwesomeIcon from "../../__mocks__/@fortawesome/fontAwesomeIcon";
+
+import ExpertiseCard from "@components/ExpertiseCard";
 
 afterEach(cleanup);
-
 beforeAll(() => FontAwesomeIcon());
-
 jest.mock("../../public/logo.png", () => {
   return {
     default: { src: "/public/logo.png", height: 100, width: 100 },
   };
 });
 
+const title = "Test for expert card";
+const desc = "Unit tests for the expert card";
+
 const createWrapper = () => {
-  return render(<Intro />);
+  return render(
+    <ExpertiseCard iconName="cog" iconPrefix="fas" title={title} desc={desc} />
+  );
 };
-describe("Test Intro component", () => {
+describe("Test ExpertiseCard component", () => {
   describe("Snapshot Tests", () => {
     const wrapper = createWrapper();
 
@@ -31,9 +35,7 @@ describe("Test Intro component", () => {
 
     it("should have correct heading", () => {
       createWrapper();
-      expect(screen.getAllByRole("heading")[0]).toHaveTextContent(
-        "Building Solutions using Tech"
-      );
+      expect(screen.getByText(/Test for expert card/i)).toBeInTheDocument();
     });
   });
 });

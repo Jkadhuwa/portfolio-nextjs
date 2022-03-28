@@ -18,10 +18,16 @@ const customJestConfig = {
     "!**/node_modules/**",
     "!**/.next/**",
     "!**/coverage/**",
+    "!**/src/database/expertise.ts",
+    "!**/src/pages/_app.tsx",
   ],
   coverageReporters: ["json", "lcov", "html", "text"],
   moduleDirectories: ["node_modules", "<rootDir>/"],
   testEnvironment: "jest-environment-jsdom",
+  moduleNameMapper: {
+    "^@components(.*)$": "<rootDir>/src/components/$1",
+    "^@mocks(.*)$": "<rootDir>/src/__mocks__/$1",
+  },
 };
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
