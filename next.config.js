@@ -1,4 +1,6 @@
+// import path from "path";
 const path = require("path");
+
 module.exports = {
   trailingSlash: true,
   webpackDevMiddleware: (config) => {
@@ -12,3 +14,5 @@ module.exports = {
     includePaths: [path.join(__dirname, "styles")],
   },
 };
+
+// export default config;
