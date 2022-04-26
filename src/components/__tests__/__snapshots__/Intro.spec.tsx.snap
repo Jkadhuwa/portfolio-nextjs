@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="flex text-gray-300 "
+        class=" flex text-gray-300 "
       >
         <div
           class="md:basis-1/2 px-6 "
@@ -151,7 +151,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="flex text-gray-300 "
+      class=" flex text-gray-300 "
     >
       <div
         class="md:basis-1/2 px-6 "

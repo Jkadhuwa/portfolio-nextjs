@@ -9,7 +9,7 @@ Object {
         class="flex flex-col md:flex-row my-12 bg-green-50 md:mx-12 md:px-16 md:py-12"
       >
         <div
-          class="md:basis-1/2"
+          class="p-8 md:basis-1/2"
         >
           <div>
             <h3
@@ -27,7 +27,7 @@ Object {
               What I Do:
             </h4>
             <div
-              class="flex space-x-6 mt-6 pr-36 md:pr-6"
+              class="flex space-x-6 mt-6 pr-20 md:pr-6"
             >
               <span
                 class="overflow-y-auto h-24 bg-green-200 w-1 "
@@ -203,7 +203,7 @@ Object {
       class="flex flex-col md:flex-row my-12 bg-green-50 md:mx-12 md:px-16 md:py-12"
     >
       <div
-        class="md:basis-1/2"
+        class="p-8 md:basis-1/2"
       >
         <div>
           <h3
@@ -221,7 +221,7 @@ Object {
             What I Do:
           </h4>
           <div
-            class="flex space-x-6 mt-6 pr-36 md:pr-6"
+            class="flex space-x-6 mt-6 pr-20 md:pr-6"
           >
             <span
               class="overflow-y-auto h-24 bg-green-200 w-1 "

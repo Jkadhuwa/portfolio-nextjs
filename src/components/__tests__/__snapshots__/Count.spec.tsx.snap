@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="md:m-28"
+        class="md:mx-28 my-12"
       >
         <div
           class="border-gray-100 border "
@@ -79,7 +79,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="md:m-28"
+      class="md:mx-28 my-12"
     >
       <div
         class="border-gray-100 border "

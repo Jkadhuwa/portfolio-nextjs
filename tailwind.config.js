@@ -15,6 +15,25 @@ module.exports = {
         nunito: ["Nunito", "sans-serif"],
         raleway: ["Raleway", "sans-serif"],
       },
+
+      keyframes: {
+        introSlideIn: {
+          "0%": {
+            transform: "translate-y-12",
+            background: 'yellow'
+          },
+          "50%": {
+            transform: "translate-y-6",
+          },
+          "100%": {
+            transform: "translate-y-0",
+          },
+        },
+      },
+
+      animation: {
+        "intro-slide-in": "introSlideIn 5s ease-out",
+      },
     },
   },
   plugins: [],

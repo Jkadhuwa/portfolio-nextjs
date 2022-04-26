@@ -6,10 +6,11 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="flex justify-around md:justify-between md:px-32 sticky top-0 text-gray-500 bg-white h-20 items-center z-50 opacity-100 animated "
+        class="h-20 items-center top-0  flex justify-between px-5 md:justify-between md:px-32  sticky  
+     text-gray-500 bg-white z-50 opacity-100 animated shadow w-full md:h-20"
       >
         <div
-          class=" flex text-gray-800 h-12 w-12 rounded-full border border items-center"
+          class=" flex text-gray-800 h-12 w-12 rounded-full border items-center"
         >
           <a
             class="cursor-pointer"
@@ -19,10 +20,34 @@ Object {
           </a>
         </div>
         <div
-          class="hidden md:flex"
+          class="flex relative md:hidden"
+        >
+          <button
+            class="text-gray-500 w-10 h-10 focus:outline-0 relative"
+          >
+            <div
+              class="block w-5  left-6 space-y-1.5 absolute transform  -translate-x-1/2 -translate-y-1/2 "
+            >
+              <span
+                aria-hidden="true"
+                class="inline-block  h-0.5 w-7 bg-current transform transition duration-500 ease-in-out float-right "
+              />
+              <span
+                aria-hidden="true"
+                class="inline-block  h-0.5 w-5 bg-current transform transition duration-500 ease-in-out float-right "
+              />
+              <span
+                aria-hidden="true"
+                class="inline-block  h-0.5 w-4 bg-current transform  transition duration-500 ease-in-out float-right "
+              />
+            </div>
+          </button>
+        </div>
+        <div
+          class="hidden  md:flex"
         >
           <nav
-            class="space-x-8 text-inherit"
+            class="flex md:space-x-8 text-inherit"
           >
             <a
               class="hover:text-yellow-600"
@@ -463,10 +488,11 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="flex justify-around md:justify-between md:px-32 sticky top-0 text-gray-500 bg-white h-20 items-center z-50 opacity-100 animated "
+      class="h-20 items-center top-0  flex justify-between px-5 md:justify-between md:px-32  sticky  
+     text-gray-500 bg-white z-50 opacity-100 animated shadow w-full md:h-20"
     >
       <div
-        class=" flex text-gray-800 h-12 w-12 rounded-full border border items-center"
+        class=" flex text-gray-800 h-12 w-12 rounded-full border items-center"
       >
         <a
           class="cursor-pointer"
@@ -476,10 +502,34 @@ Object {
         </a>
       </div>
       <div
-        class="hidden md:flex"
+        class="flex relative md:hidden"
+      >
+        <button
+          class="text-gray-500 w-10 h-10 focus:outline-0 relative"
+        >
+          <div
+            class="block w-5  left-6 space-y-1.5 absolute transform  -translate-x-1/2 -translate-y-1/2 "
+          >
+            <span
+              aria-hidden="true"
+              class="inline-block  h-0.5 w-7 bg-current transform transition duration-500 ease-in-out float-right "
+            />
+            <span
+              aria-hidden="true"
+              class="inline-block  h-0.5 w-5 bg-current transform transition duration-500 ease-in-out float-right "
+            />
+            <span
+              aria-hidden="true"
+              class="inline-block  h-0.5 w-4 bg-current transform  transition duration-500 ease-in-out float-right "
+            />
+          </div>
+        </button>
+      </div>
+      <div
+        class="hidden  md:flex"
       >
         <nav
-          class="space-x-8 text-inherit"
+          class="flex md:space-x-8 text-inherit"
         >
           <a
             class="hover:text-yellow-600"

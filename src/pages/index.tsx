@@ -13,16 +13,16 @@ import Expertise from "@components/Expertise";
 const Homepage = () => {
   return (
     <div className="">
-      <section className="px-8 py-12 md:px-12 md:py-16 lg:mx-32 bg-gray-10 shadow md:mx-10 ">
+      <section className=" px-8 py-12 md:px-12 md:py-16 lg:mx-32 bg-gray-10 shadow-sm md:mx-10 ">
         <Intro />
       </section>
       <section className="py-12 md:mx-5">
         <Counts />
       </section>
-      <section className="">
+      <section className="py-12">
         <AboutMe />
       </section>
-      <section className="">
+      <section className="py-12">
         <Expertise />
       </section>
     </div>

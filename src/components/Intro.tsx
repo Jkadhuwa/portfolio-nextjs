@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Intro = () => {
   return (
-    <div className="flex text-gray-300 ">
+    <div className=" flex text-gray-300 ">
       <div className="md:basis-1/2 px-6 ">
         <div className=" ">
           <h2 className="font-nunito text-gray-800 font-bold text-4xl mb-6  ">

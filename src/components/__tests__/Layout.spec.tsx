@@ -26,15 +26,15 @@ jest.mock("next/router", () => ({
 const createWrapper = () => {
   return render(<Layout children />);
 };
-describe("Test Navbar component", () => {
+describe("Test Layout component", () => {
   describe("Snapshot Tests", () => {
     const wrapper = createWrapper();
 
     expect(wrapper).toMatchSnapshot();
   });
 
-  describe("Navbar Unit Tests", () => {
-    it("Should render navbar correctly", () => {
+  describe("Layout Unit Tests", () => {
+    it("Should render layout correctly", () => {
       createWrapper();
     });
 
@@ -45,7 +45,6 @@ describe("Test Navbar component", () => {
 
     it("should have Software Engineer", () => {
       createWrapper();
-
       expect(screen.getByText(/Software Engineer/i)).toBeInTheDocument();
     });
   });
