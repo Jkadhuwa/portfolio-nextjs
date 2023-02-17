@@ -16,7 +16,14 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./*"],
+      "@src/*":["./src/*"],
+      "@components":["./src/components"],
+      "@components/*":["./src/components/*"],
+      "@pages/*":["./src/pages/*"],
+      "@styles/*":["./src/styles/*"],
+      "@graphQl":["./src/graphQl"],
+      "@graphQl/*":["./src/graphQl/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
