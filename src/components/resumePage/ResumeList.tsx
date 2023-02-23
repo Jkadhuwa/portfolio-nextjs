@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React, { Fragment } from "react";
 import { FaGraduationCap, FaNetworkWired } from "react-icons/fa";
 import { BsFillAwardFill } from "react-icons/bs";
 import { IconTitle, ResumeItem, ResumeSkeleton } from "@components";

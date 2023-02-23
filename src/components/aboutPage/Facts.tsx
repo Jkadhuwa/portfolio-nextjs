@@ -1,5 +1,4 @@
 import { BsAwardFill, BsCodeSlash, BsGlobe, BsJournalAlbum } from "react-icons/bs";
-import { FaReact } from "react-icons/fa";
 import { Fact } from "@components";
 
 export default function Facts() {

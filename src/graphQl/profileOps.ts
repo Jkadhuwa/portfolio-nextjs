@@ -26,11 +26,13 @@ export default {
     `,
 
     getBio: gql`
-      query GetBio {
-        profiles {
+      query GetBio($id: String) {
+        profile(where: { userId: $id }) {
           cv {
             url
           }
+          name
+          hello
           bio
         }
       }

@@ -1,21 +1,49 @@
-import { useState } from "react";
-import { MenuButton } from "@components";
-import { BsBookHalf } from "react-icons/bs"
-import { menus } from "@/data";
-//  import SideMenuLb from "./SideMenuLb"
+import { useState, useEffect } from "react";
 import { ReactiveVar, useReactiveVar } from "@apollo/client";
 import { currentMenu } from "@/apollo-client";
+import { useTheme } from "next-themes";
+import { BsMoonStars, BsSun, BsDisplay } from "react-icons/bs";
 
+import { MenuButton } from "@components";
+import { menus } from "@/data";
 interface Props {
   showSideMenu: ReactiveVar<boolean>;
 }
 
 export default function Menus({ showSideMenu }: Props) {
   const menuId = useReactiveVar(currentMenu);
+  const { systemTheme, theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  const renderThemeChanger = () => {
+    if (!mounted) return null;
+    const currentTheme = theme === "system" ? systemTheme : theme;
+
+    if (currentTheme === "dark") {
+      return (
+        <BsSun
+          className="text-4xl text-gray-300 transition-all duration-300 group-hover:text-main-orange"
+          role="button"
+          onClick={() => setTheme("light")}
+        />
+      );
+    } else {
+      return (
+        <BsMoonStars
+          className="text-4xl text-gray-300 transition-all duration-300 group-hover:text-main-orange"
+          role="button"
+          onClick={() => setTheme("dark")}
+        />
+      );
+    }
+  };
 
   return (
-    <header className="xl:w-[7.2rem] lg:w-[7rem] py-6 h-full mr-4 hidden lg:flex flex-col justify-between">
-      {/* humburbar menu */}
+    <header className="xl:w-[7.2rem] lg:w-[7rem] py-6 h-full mr-4 hidden lg:flex flex-col justify-between dark:text-gray-700">
+     
       <div
         onClick={() => showSideMenu(true)}
         className="h-[7.2rem] group rounded-lg bg-gray-900 flex items-center justify-center cursor-pointer"
@@ -27,18 +55,9 @@ export default function Menus({ showSideMenu }: Props) {
         </div>
       </div>
 
-      {/* guest book btn */}
-      {/* <div
-        onClick={() => currentMenu(7)}
-        className="h-[7.2rem] rounded-lg bg-gray-900 flex items-center justify-center cursor-pointer group"
-      > 
-       <div className="relative"> 
-       <BsBookHalf className="text-4xl text-gray-300 transition-all duration-300 group-hover:text-main-orange" /> 
-       <span className="absolute flex items-center justify-center w-6 h-6 text-lg text-gray-800 rounded-full -top-2 -right-3 bg-main-orange">
-            
-          </span> 
-     </div>
-      </div> */}
+      <div className="relative h-[7.2rem] rounded-lg bg-gray-900 flex items-center justify-center cursor-pointer group">
+        {renderThemeChanger()}
+      </div>
 
       <div className="overflow-hidden rounded-lg">
         {menus.slice(0, 6).map((m, i) => (
