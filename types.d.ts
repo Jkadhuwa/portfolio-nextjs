@@ -3,8 +3,8 @@ import { IconType } from "react-icons";
 export interface ProfileData {
   id: string;
   cv: {
-   url: string;
-  }
+    url: string;
+  };
   name: string;
   avatar: { url: string };
   bgImage: { url: string }[];
@@ -29,32 +29,44 @@ export interface User {
 }
 
 export interface SocialMedia {
-  id: number
-  label: string
-  mediaUrl: string
-  logoColor: string
-  info: string
-  Icon: IconType
+  id: number;
+  label: string;
+  mediaUrl: string;
+  logoColor: string;
+  info: string;
+  Icon: IconType;
 }
 export interface ServiceData {
-  id: number
-  title: string
-  Icon: IconType
-  description: string
+  id: number;
+  title: string;
+  Icon: IconType;
+  description: string;
 }
 
 export interface ExperienceData {
-  id: string
-  badge: string,
+  id: string;
+  badge: string;
   logo: {
-    url: string
-  },
-  logoAlt: string
-  desc: string
-  title: string
-  subTitle: string
-  experience: boolean
-  certificate: boolean
-  education: boolean
+    url: string;
+  };
+  logoAlt: string;
+  desc: string;
+  title: string;
+  subTitle: string;
+  experience: boolean;
+  certificate: boolean;
+  education: boolean;
+}
 
+export interface BlogData {
+  id: string;
+  blogUrl: string;
+  description: string;
+  title: string;
+  thumbnail: { url: string };
+  date: Date;
+}
+
+export interface BlogsQuery {
+  blogs: BlogsData[];
 }

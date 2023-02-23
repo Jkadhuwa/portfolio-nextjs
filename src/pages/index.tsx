@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
-import Image from "next/image";
 import { Toaster } from "react-hot-toast";
-import { Inter } from "@next/font/google";
 import { useReactiveVar } from "@apollo/client";
 import { AnimatePresence, motion } from "framer-motion";
-import styles from "@/styles/Home.module.css";
 import { Background, Menus, SideMenus } from "@components";
 import { menus } from "@/data";
 import client, { currentMenu, currentWork, showMenu } from "@/apollo-client";
@@ -14,7 +11,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import profileOperations from "@graphQl/profileOps";
 import { ProfileData } from "@/types";
 
-const inter = Inter({ subsets: ["latin"] });
+
 
 const clipPaths = ["polygon(0 50%, 100% 50%, 100% 50%, 0 50%)", "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)"];
 

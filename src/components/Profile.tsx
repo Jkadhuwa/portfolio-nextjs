@@ -3,7 +3,6 @@ import { ProfileData } from "@/types";
 import Typing from "./Typing";
 import profileOperations from "@graphQl/profileOps";
 import Image from "next/image";
-import { lazy } from "react";
 
 interface Props {
   profiles: [

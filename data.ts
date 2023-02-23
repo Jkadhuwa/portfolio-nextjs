@@ -17,9 +17,10 @@ import { ImDisplay } from "react-icons/im";
 import { SiFigma, SiFirebase, SiFiverr, SiNextdotjs, SiNodedotjs, SiAzuredevops } from "react-icons/si";
 import { IoBugSharp } from "react-icons/io5";
 import { MenuData, SocialMedia, ServiceData } from "@/types";
-import { About, Facts } from "@components";
+import { About } from "@components";
 import Services from "./src/components/servicePage/Services";
-import Resume from './src/components/resumePage/Resume'
+import Resume from './src/components/resumePage/Resume';
+import Blogs from './src/components/blogsPage/Blogs';
 
 export const menus: MenuData[] = [
   {
@@ -50,7 +51,7 @@ export const menus: MenuData[] = [
     id: 5,
     label: "blogs",
     Icon: MdDashboard,
-    Component: About,
+    Component: Blogs,
   },
   {
     id: 6,

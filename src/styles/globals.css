@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+  body{
+     @apply bg-gray-50 text-main-dark dark:bg-main-dark dark:text-gray-300
+  }
+}
+
 @layer components {
   .formStyle {
     @apply w-full text-2xl bg-transparent border-0 border-b-2 border-gray-800 border-solid rounded-none resize-none placeholder:text-2xl placeholder:text-gray-400 text-main-orange focus:border-main-orange focus:placeholder:text-gray-300;
