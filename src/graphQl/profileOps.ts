@@ -31,8 +31,6 @@ export default {
           cv {
             url
           }
-          name
-          hello
           bio
         }
       }
