@@ -23,11 +23,9 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Install Dependencies
-        working-directory: portfolio
         run: yarn install --frozen-lockfile
 
       - name: Formatting, linting & Testing
-        working-directory: portfolio
         run: |
           yarn run lint
   

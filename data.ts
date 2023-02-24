@@ -17,10 +17,12 @@ import { ImDisplay } from "react-icons/im";
 import { SiFigma, SiFirebase, SiFiverr, SiNextdotjs, SiNodedotjs, SiAzuredevops } from "react-icons/si";
 import { IoBugSharp } from "react-icons/io5";
 import { MenuData, SocialMedia, ServiceData } from "@/types";
-import { About } from "@components";
+import About  from "./src/components/aboutPage/About";
 import Services from "./src/components/servicePage/Services";
 import Resume from './src/components/resumePage/Resume';
 import Blogs from './src/components/blogsPage/Blogs';
+import Contact from './src/components/contactPage/Contact';
+import Portfolio from "./src/components/portfolioPage/Portfolio";
 
 export const menus: MenuData[] = [
   {
@@ -45,7 +47,7 @@ export const menus: MenuData[] = [
     id: 4,
     label: "Portfolio",
     Icon: FaEye,
-    Component: About,
+    Component: Portfolio,
   },
   {
     id: 5,
@@ -57,7 +59,7 @@ export const menus: MenuData[] = [
     id: 6,
     label: "contact",
     Icon: FiSend,
-    Component: About,
+    Component: Contact,
   },
 ];
 export const socialMedia: SocialMedia[] = [

@@ -2,10 +2,11 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import profileOperations from "@graphQl/profileOps";
 import { MyInfo, AboutMeSkeleton } from "@components";
-
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from "remark-gfm";
 
 interface GetUserInfo {
-  profile: { cv: { url: string }; name: string; hello: string, bio: string };
+  profile: { cv: { url: string }, bio: string };
 }
 
 export default function AboutMe() {
@@ -19,15 +20,13 @@ export default function AboutMe() {
   }
 
   if (loading || data === undefined) return <AboutMeSkeleton />;
-  const { name, hello, bio, cv:{url}} =  data.profile;
+  const { bio, cv:{url}} =  data.profile;
 
   return (
     <div className="px-12 py-10 ">
       <div className="px-12 py-10">
         <article className="md:text-justify  prose max-w-none prose-h2:mb-2.5 prose-h2:text-[1.6rem] prose-p:text-2xl prose-p:leading-[1.65] text-center">
-          <h3 className="text-2xl">{hello}</h3>
-          <h2 className="text-4xl">{name}</h2>
-          <p className="">{bio}</p>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{bio}</ReactMarkdown>
         </article>
 
         <ul className="location grid grid-cols-1 sm:grid-cols-2 mt-6 gap-y-2">

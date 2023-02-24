@@ -15,6 +15,14 @@
   .formStyle {
     @apply w-full text-2xl bg-transparent border-0 border-b-2 border-gray-800 border-solid rounded-none resize-none placeholder:text-2xl placeholder:text-gray-400 text-main-orange focus:border-main-orange focus:placeholder:text-gray-300;
   }
+
+  .textarea:focus, .input:focus{
+    @apply outline-none border-main-orange
+  }
+  .btn:hover{
+    @apply text-main-orange
+  }
+  
 }
 
 :root {
@@ -27,7 +35,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  border: none;
+  /* border: none; */
   text-decoration: none;
 }
 
