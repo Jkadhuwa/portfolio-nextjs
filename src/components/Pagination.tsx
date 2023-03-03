@@ -63,14 +63,14 @@ const Pagination = ({ currentPage, setCurrentPage, postsPerPage, onLoadMore, set
   }
 
   return (
-    <div className="p-5 rounded-lg bg-[#0e1422d9] flex justify-center items-center gap-7">
+    <div className="p-5 rounded-lg flex justify-center items-center gap-7">
       <button
         onClick={() => changePage(currentPage - 1)}
         className={`hover:text-main-orange ${
           currentPage > 1 ? "text-gray-400" : "text-gray-500 pointer-events-none"
-        } group transition-all duration-300 items-center gap-0.5 text-[1.4rem] flex`}
+        } group transition-all duration-300 items-center gap-0.5 text-[1.4rem] flex cursor-pointer`}
       >
-        <FiChevronLeft className="text-3xl" />
+        <FiChevronLeft className="text-3xl cursor-pointer"  />
         Prev
       </button>
       <div className="flex items-center gap-7 flex-wrap">
@@ -92,10 +92,10 @@ const Pagination = ({ currentPage, setCurrentPage, postsPerPage, onLoadMore, set
         onClick={() => changePage(currentPage + 1)}
         className={`hover:text-main-orange ${
           currentPage < totalPages ? "text-gray-400" : "text-gray-500 pointer-events-none"
-        } group transition-all duration-300 items-center gap-0.5 text-gray-400 text-[1.4rem] flex`}
+        } group transition-all duration-300 items-center gap-0.5 text-gray-400 text-[1.4rem] flex cursor-pointer`}
       >
         Next
-        <FiChevronRight className="text-3xl" />
+        <FiChevronRight className="text-3xl cursor-pointer" />
       </button>
     </div>
   );
