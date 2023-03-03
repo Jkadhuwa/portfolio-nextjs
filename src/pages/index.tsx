@@ -41,7 +41,7 @@ const Home = ({ profileData }: Props) => {
       >
         <BiMenu className="w-10 h-10" />
       </button>
-      <section className="z-10 w-full h-full lg:w-[115rem] xl:w-[126.8rem] lg:h-[62.5rem] lg:flex p-10 sm:p-24 lg:p-0">
+      <section className="z-10 w-full h-full lg:w-[115rem] xl:w-[126.8rem] 2xl:w-[150rem] 2xl:h-[75rem] lg:h-[62.5rem] lg:flex p-10 sm:p-24 lg:p-0">
         <Menus showSideMenu={showMenu} />
 
         <div className="xl:w-full lg:w-[90%] w-full h-full lg:py-6">

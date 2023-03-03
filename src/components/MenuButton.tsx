@@ -9,13 +9,12 @@ interface Props {
 }
 
 const MenuButton = ({ menu, noBorder, active, reactiveVar }: Props) => {
-  
   return (
     <div
       onClick={() => reactiveVar(menu.id)}
       className={`${
         noBorder ? "" : "relative  customLine before:bottom-0 borderRight"
-      } h-[7.2rem] bg-gray-900 group gap-2 flex flex-col items-center justify-center cursor-pointer ${
+      } h-[7.2rem] 2xl:h-[9rem] bg-gray-900 group gap-2 flex flex-col items-center justify-center cursor-pointer ${
         active ? "text-main-orange" : "text-gray-300"
       }`}
     >
