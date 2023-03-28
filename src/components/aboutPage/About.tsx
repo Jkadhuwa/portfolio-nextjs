@@ -1,7 +1,6 @@
 import { Title, Profile, Facts } from "@components";
 import AboutMe from "./AboutMe";
 
-import type { NextPage } from "next";
 
 const About = () => {
   return (

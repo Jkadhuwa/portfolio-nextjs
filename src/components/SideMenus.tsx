@@ -1,7 +1,9 @@
 import { ReactiveVar, useReactiveVar } from "@apollo/client";
-import { MouseEvent, KeyboardEvent } from "react";
+import { MouseEvent } from "react";
+import Image from "next/image";
 import { IoMdClose } from "react-icons/io";
-import { menus, socialMedia } from "@/data"
+import { socialMedia } from "@/data";
+import routes from "../routes";
 import { currentMenu } from "@/apollo-client";
 import { SideMenuBtn } from "@components";
 import { ProfileData } from "@/types";
@@ -22,7 +24,7 @@ const SideMenus = ({ sideMenu, showMenu, profile }: Props) => {
 
   const getYear = () => {
     return new Date().getFullYear();
-  }
+  };
   return (
     <section
       onClick={closeAside}
@@ -39,20 +41,16 @@ const SideMenus = ({ sideMenu, showMenu, profile }: Props) => {
         </button>
         <div className="top pb-12 pt-36 flex flex-col items-center">
           <div>
-            {/* <Image
-              src={profile.ownersPhoto.url}
-              alt="userPic"
-              objectFit="cover"
-              width="125"
-              height="125"
-              className="rounded-full"
-            /> */}
+            {profile?.bgImage.url && (
+              <Image src={profile.bgImage.url as any} alt="userPic" width={150} height={150} className="rounded-full" />
+            )}
+
             <h3 className="text-[1.65rem] text-gray-300 tracking-wide font-medium capitalize text-center mt-6 mb-4">
               {profile.name}
             </h3>
-          </div> 
+          </div>
 
-           <div className="flex gap-x-5 items-center justify-center">
+          <div className="flex gap-x-5 items-center justify-center">
             {socialMedia.map(({ id, Icon, label, mediaUrl }) => (
               <a rel="noreferrer" href={mediaUrl} className="tooltip tooltip-bottom" data-tip={label} key={id}>
                 <Icon className="text-gray-400 text-2xl transition-all duration-300 hover:text-main-orange" />
@@ -63,14 +61,14 @@ const SideMenus = ({ sideMenu, showMenu, profile }: Props) => {
 
         <div className="bottom bg-gray-800 flex-grow">
           <div className="rounded-lg overflow-hidden">
-            {menus.map((m, i) => (
+            {routes.map((m, i) => (
               <SideMenuBtn
                 key={m.id}
                 menu={m}
                 active={menuId === m.id}
                 reactiveVar={currentMenu}
                 showMenu={showMenu}
-                last={i === menus.length - 1}
+                last={i === routes.length - 1}
               />
             ))}
           </div>
@@ -84,7 +82,9 @@ const SideMenus = ({ sideMenu, showMenu, profile }: Props) => {
             download cv
           </a>
 
-          <p className="text-center text-gray-500 text-xl m-16 mb-10">{"Musinda Kadhuwa's"} portfolio © {getYear()}.</p>
+          <p className="text-center text-gray-500 text-xl m-16 mb-10">
+            {"Musinda Kadhuwa's"} portfolio © {getYear()}.
+          </p>
         </div>
       </main>
     </section>
