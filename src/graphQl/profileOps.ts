@@ -9,7 +9,11 @@ export default {
           name
           cv {
             url
+          },
+          bgImage{
+            url
           }
+        
         }
       }
     `,
