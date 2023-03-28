@@ -1,15 +1,19 @@
 import { IconType } from "react-icons";
 import { MyIcon } from "@components";
-
+import * as Icons from "../../icons";
 interface Props {
   name: string;
   border: boolean;
   desc: string;
-  Icon: IconType;
+  icon: IconType;
   last: boolean;
 }
 
-export default function Service({ name, Icon, border, desc, last }: Props) {
+export default function Service({ name, border,icon, desc, last }: Props) {
+  
+  // @ts-ignore
+  const {[icon.toString()]:Icon } = Icons;
+  
   return (
     <li
       className={`customLine before:bottom-0 relative borderLeft ${

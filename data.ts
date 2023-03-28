@@ -2,66 +2,18 @@ import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
 import {
   FaDev,
   FaDiscord,
-  FaEye,
-  FaFacebookF,
-  FaRegListAlt,
-  FaRegNewspaper,
-  FaRegUser,
   FaTwitter,
   FaMobileAlt,
 } from "react-icons/fa";
-import { FiSend } from "react-icons/fi";
-import { MdComputer, MdDashboard } from "react-icons/md";
+
 import { BsCodeSlash } from "react-icons/bs";
 import { ImDisplay } from "react-icons/im";
-import { SiFigma, SiFirebase, SiFiverr, SiNextdotjs, SiNodedotjs, SiAzuredevops } from "react-icons/si";
+import { SiAzuredevops } from "react-icons/si";
 import { IoBugSharp } from "react-icons/io5";
-import { MenuData, SocialMedia, ServiceData } from "@/types";
-import About  from "./src/components/aboutPage/About";
-import Services from "./src/components/servicePage/Services";
-import Resume from './src/components/resumePage/Resume';
-import Blogs from './src/components/blogsPage/Blogs';
-import Contact from './src/components/contactPage/Contact';
-import Portfolio from "./src/components/portfolioPage/Portfolio";
+import {  SocialMedia, ServiceData } from "@/types";
 
-export const menus: MenuData[] = [
-  {
-    id: 1,
-    label: "about",
-    Icon: FaRegUser,
-    Component: About,
-  },
-  {
-    id: 2,
-    label: "resume",
-    Icon: FaRegListAlt,
-    Component: Resume,
-  },
-  {
-    id: 3,
-    label: "services",
-    Icon: FaEye,
-    Component: Services,
-  },
-  {
-    id: 4,
-    label: "Portfolio",
-    Icon: FaEye,
-    Component: Portfolio,
-  },
-  {
-    id: 5,
-    label: "blogs",
-    Icon: MdDashboard,
-    Component: Blogs,
-  },
-  {
-    id: 6,
-    label: "contact",
-    Icon: FiSend,
-    Component: Contact,
-  },
-];
+
+
 export const socialMedia: SocialMedia[] = [
   {
     id: 1,
@@ -109,31 +61,31 @@ export const services: ServiceData[] = [
   {
     id: 1,
     title: "Front-end",
-    Icon: ImDisplay,
+    icon: ImDisplay,
     description: "Modern and Responsive website that will help you reach all of your marketing.",
   },
   {
     id: 2,
     title: "Back-end",
-    Icon: BsCodeSlash,
+    icon: BsCodeSlash,
     description: "Performant Back-end with a NoSQL DB and API written in a standard express router or tRPC.",
   },
   {
     id: 3,
     title: "Mobile App Development",
-    Icon: FaMobileAlt,
+    icon: FaMobileAlt,
     description: "Modern user Interface trends with a highly professional and unique design.",
   },
   {
     id: 4,
     title: "DevOps",
-    Icon: SiAzuredevops,
+    icon: SiAzuredevops,
     description: "Manage all operations of ",
   },
   {
     id: 5,
     title: "Q & A",
-    Icon: IoBugSharp,
+    icon: IoBugSharp,
     description: "Fully test apps to ensure it meets the required user specifications and industry standards",
   },
 ];

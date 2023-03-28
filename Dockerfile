@@ -4,10 +4,12 @@
 FROM node:alpine
 
 # Create & set working directory
-WORKDIR /portfolio
+WORKDIR /app
 
 COPY package.json yarn.lock ./
 
+ENV NODE_ENV production
+
 RUN yarn install --frozen-lockfile
 
-ENV NODE_ENV production
+

@@ -2,10 +2,9 @@ import { useState, useEffect } from "react";
 import { ReactiveVar, useReactiveVar } from "@apollo/client";
 import { currentMenu } from "@/apollo-client";
 import { useTheme } from "next-themes";
-import { BsMoonStars, BsSun, BsDisplay } from "react-icons/bs";
-
+import { BsMoonStars, BsSun } from "react-icons/bs";
 import { MenuButton } from "@components";
-import { menus } from "@/data";
+import routes from "../routes";
 interface Props {
   showSideMenu: ReactiveVar<boolean>;
 }
@@ -60,11 +59,11 @@ export default function Menus({ showSideMenu }: Props) {
       </div>
 
       <div className="overflow-hidden rounded-lg">
-        {menus.slice(0, 6).map((m, i) => (
+        {routes.slice(0, 6).map((m, i) => (
           <MenuButton
             key={m.id}
             menu={m}
-            noBorder={i + 1 === menus.length}
+            noBorder={i + 1 === routes.length}
             active={menuId === m.id}
             reactiveVar={currentMenu}
           />

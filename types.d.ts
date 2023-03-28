@@ -7,10 +7,17 @@ export interface ProfileData {
   };
   name: string;
   avatar: { url: string };
-  bgImage: { url: string }[];
+  bgImage: { url: string };
 }
 
 export interface MenuData {
+  id: number;
+  label: string;
+  Icon: IconType;
+  Component: () => JSX.Element;
+}
+
+export interface RouteData{
   id: number;
   label: string;
   Icon: IconType;
@@ -39,7 +46,7 @@ export interface SocialMedia {
 export interface ServiceData {
   id: number;
   title: string;
-  Icon: IconType;
+  icon: IconType;
   description: string;
 }
 

@@ -4,6 +4,9 @@ export default function Typing() {
   return (
     <div className="text-center h-8 mt-6">
       <Typewriter
+        options={{
+          loop: true,
+        }}
         onInit={(typewriter) => {
           typewriter
             .typeString('<span style="color:#FF906F; font-size: 14px; font-weight: 400;">Mobile Developer</span>')

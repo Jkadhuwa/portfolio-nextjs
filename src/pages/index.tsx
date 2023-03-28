@@ -4,14 +4,13 @@ import { Toaster } from "react-hot-toast";
 import { useReactiveVar } from "@apollo/client";
 import { AnimatePresence, motion } from "framer-motion";
 import { Background, Menus, SideMenus } from "@components";
-import { menus } from "@/data";
+// import { menus } from "@/data";
+import routes from "../routes";
 import client, { currentMenu, currentWork, showMenu } from "@/apollo-client";
 import { BiMenu } from "react-icons/bi";
 import "react-loading-skeleton/dist/skeleton.css";
 import profileOperations from "@graphQl/profileOps";
 import { ProfileData } from "@/types";
-
-
 
 const clipPaths = ["polygon(0 50%, 100% 50%, 100% 50%, 0 50%)", "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)"];
 
@@ -21,7 +20,6 @@ interface Props {
 
 const Home = ({ profileData }: Props) => {
   const menuId = useReactiveVar(currentMenu);
-  const workId = useReactiveVar(currentWork);
   const sideMenu = useReactiveVar(showMenu);
 
   return (
@@ -53,7 +51,7 @@ const Home = ({ profileData }: Props) => {
             after:h-6 after:bg-gray-900 after:z-30"
           >
             <AnimatePresence mode="wait">
-              {menus.map(
+              {routes.map(
                 (m) =>
                   menuId === m.id && (
                     <motion.div
