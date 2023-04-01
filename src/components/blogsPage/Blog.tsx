@@ -16,9 +16,11 @@ const Blog = ({ blog }: Props) => {
           rel="noreferrer"
         >
           <Image
-            src={blog.thumbnail.url}
+            src={blog?.thumbnail.url}
             alt="blog"
-            fill
+            height={500}
+            width={500}
+            priority
             className="group-hover:scale-105 transition-all duration-500"
           />
         </a>

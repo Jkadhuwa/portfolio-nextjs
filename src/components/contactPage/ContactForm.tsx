@@ -97,10 +97,11 @@ const ContactForm = () => {
               <label className="label cursor-pointer  flex flex-col">
                 <input
                   type="radio"
-                  id="radio-10"
+                  id="service"
                   className="radio checked:bg-main-orange"
                   {...register("service")}
                   value="mob-dev"
+                  checked
                 />
                 <span className="label-text text-lg">Mobile Development</span>
               </label>
@@ -109,11 +110,12 @@ const ContactForm = () => {
               <label className="label cursor-pointer flex flex-col">
                 <input
                   type="radio"
-                  id="radio-10"
+                  id="service"
                   className="radio checked:bg-main-orange"
                   {...register("service")}
                   value="web-dev"
                   checked
+                 
                 />
                 <span className="label-text text-lg">Web Development</span>
               </label>
@@ -126,6 +128,7 @@ const ContactForm = () => {
                   className="radio checked:bg-main-orange"
                   {...register("service")}
                   value="other"
+                  checked
                 />
                 <span className="label-text text-lg">Other</span>
               </label>
@@ -144,7 +147,7 @@ const ContactForm = () => {
           <p className="px-4 text-red-500">{errors.message?.message}</p>
         </div>
         <div className="card-actions justify-center pt-4">
-          <button type="submit" className="btn btn-wide bg-[#0E1522]" disabled={!isDirty || !isValid}>
+          <button type="submit" className="btn btn-wide bg-[#0E1522]">
             {" "}
             {loading ? "sending..." : "send message"}
           </button>
