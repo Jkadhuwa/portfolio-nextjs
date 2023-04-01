@@ -26,6 +26,7 @@ export default function Profile() {
             alt="userPic"
             width={500}
             height={500}
+            priority={false}
             className="w-full h-full block p-0 z-20 relative object-cover rounded-full border-4 border-[#1c1b1b] border-solid"
           />
         )}

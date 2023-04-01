@@ -36,6 +36,8 @@ const Blogs = () => {
     setFilteredBlogs(blogsData);
   }, [blogsData]);
 
+  
+
   return (
     <section className="h-full overflow-y-scroll myScroll">
       <Title name="Blogs" />
