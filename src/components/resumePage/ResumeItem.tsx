@@ -8,7 +8,7 @@ interface Props {
 
 const ResumeItem = ({ resume, border }: Props) => {
   return (
-    <div className={`pt-11 ${border ? "customLine before:bottom-0 relative borderLeft pb-11" : "pb-3"}`}>
+    <div className={`pt-11 ${border ? "customLine borderLeft pb-11" : "pb-3"}`}>
       <h2
         className={`${
           resume.badge.endsWith("Present") ? "text-main-orange border-main-orange" : "text-gray-500 border-gray-500"

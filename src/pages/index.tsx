@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Background, Menus, SideMenus } from "@components";
 // import { menus } from "@/data";
 import routes from "../routes";
-import client, { currentMenu, currentWork, showMenu } from "@/apollo-client";
+import client, { currentMenu, showMenu } from "@/apollo-client";
 import { BiMenu } from "react-icons/bi";
 import "react-loading-skeleton/dist/skeleton.css";
 import profileOperations from "@graphQl/profileOps";
