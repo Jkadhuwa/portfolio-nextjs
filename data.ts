@@ -1,18 +1,11 @@
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
-import {
-  FaDev,
-  FaDiscord,
-  FaTwitter,
-  FaMobileAlt,
-} from "react-icons/fa";
+import { FaDev, FaDiscord, FaTwitter, FaMobileAlt } from "react-icons/fa";
 
 import { BsCodeSlash } from "react-icons/bs";
 import { ImDisplay } from "react-icons/im";
 import { SiAzuredevops } from "react-icons/si";
 import { IoBugSharp } from "react-icons/io5";
-import {  SocialMedia, ServiceData } from "@/types";
-
-
+import { SocialMedia, ServiceData } from "@/types";
 
 export const socialMedia: SocialMedia[] = [
   {
@@ -89,3 +82,30 @@ export const services: ServiceData[] = [
     description: "Fully test apps to ensure it meets the required user specifications and industry standards",
   },
 ];
+
+export const ProjectData = {
+  id: "01",
+  projectUrl: "http://localhost:5000",
+  thumbnail: { url: "https://media.graphassets.com/dJWpRggUQt2gJjsB06iw" },
+  title: "Personal Portfolio",
+  tags: ["Web design", "Development", " Illustrations"],
+  client: "Violet Kerubo",
+  about:
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident libero exercitationem nesciunt et amet, veritatis soluta ullam alias tempora unde.",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusantium pariatur, totam facere maxime ex ratione id nobis hic inventore, maiores dolore eos ducimus. Reiciendis quibusdam delectus incidunt velit aut, distinctio perferendis, eaque tenetur aperiam magnam libero pariatur eum doloremque maxime veritatis ipsam! Corporis cum nulla ipsa cumque quibusdam accusamus itaque, dolorum dignissimos necessitatibus assumenda?",
+  images: [
+    {
+      url: "https://media.graphassets.com/dJWpRggUQt2gJjsB06iw",
+    },
+    {
+      url: "https://media.graphassets.com/ixce2ExsTFS7UdqyqTzh",
+    },
+    {
+      url: "https://media.graphassets.com/lRAvBYRTTcyJEZ5PQUnE",
+    },
+    {
+      url: "https://media.graphassets.com/GAwT9TbRbWSNb7rhZvFQ",
+    },
+  ],
+};
