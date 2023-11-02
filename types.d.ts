@@ -17,7 +17,7 @@ export interface MenuData {
   Component: () => JSX.Element;
 }
 
-export interface RouteData{
+export interface RouteData {
   id: number;
   label: string;
   Icon: IconType;
@@ -76,4 +76,20 @@ export interface BlogData {
 
 export interface BlogsQuery {
   blogs: BlogsData[];
+}
+
+export interface ProjectData {
+  id: string;
+  projectUrl: string;
+  title: string;
+  tags: string[];
+  client: string;
+  about: string;
+  description: string;
+  images: { url: string }[];
+  sourceCode;
+}
+
+export interface ProjectQuery {
+  projects: ProjectData[];
 }

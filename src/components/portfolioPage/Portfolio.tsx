@@ -1,10 +1,23 @@
+import { useQuery } from "@apollo/client";
+import Project from "./Project";
+import Title from "../Title";
+import Projects from "./Projects";
+import { ProjectQuery } from "@/types";
+import portfolioOps from "@/src/graphQl/portfolioOps";
+
 export default function Portfolio() {
+  const { loading, error, data } = useQuery<ProjectQuery>(portfolioOps.Queries.getProjects);
+  if (loading || data === undefined) return <div>Loading</div>;
+  if (error) return <>Error</>;
+
   return (
-    <section className="flex flex-col text-gray-100 uppercase text-center justify-center items-center h-full" id="home">
-      <h4 className="text-5xl font-extralight  tracking-wide md:mb-24  py-6">This Page is</h4>
-      <div className="text-9xl  font-medium tracking-widest">coming</div>
-      <div className="text-9xl font-medium tracking-widest md:mb-24 ">soon</div>
-      <div className="text-5xl font-extralight  tracking-wide py-6">stay tuned</div>
-    </section>
+    <div className="h-full myScroll overflow-y-scroll">
+      <Title name="Projects" />
+      <div className="py-8 px-12 grid ">
+        {data.projects?.map((project) => (
+          <Projects key={project.id} project={project} />
+        ))}
+      </div>
+    </div>
   );
 }
